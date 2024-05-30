@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Appointment Booking</title>
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        padding-top: 70px; /* Adjust padding to accommodate the fixed navbar */
+      }
+    </style>
+  </head>
+
+  <body>
+   {% include 'header.html' %}
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">amwell informations</h5>
+              <p class="card-text">all amwell informations here</p>
+              <a href="/amwell/" class="btn btn-primary">View Customuser</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">healthtap informations</h5>
+              <p class="card-text">All healthtap informations Here</p>
+              <a href="/healthtap/" class="btn btn-primary">View healthtip </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">practo Information</h5>
+              <p class="card-text">All practo Information Available Here</p>
+              <a href="/practo/" class="btn btn-primary">View CustomUser</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">zocdoc Information</h5>
+              <p class="card-text">All zocdoc Information Available Here</p>
+              <a href="/zocdoc/" class="btn btn-primary">View CustomUser</a>
+            </div>
+          </div>
+        </div>
+        
+        
+    {% include 'footer.html' %}
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
