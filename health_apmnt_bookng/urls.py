@@ -26,10 +26,10 @@ from .views import index,amwell,healthtap,practo,zocdoc
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path('amwell/', amwell, name='amwell'),
-    path('healthtap/', healthtap, name='healthtap'),
-    path('practo/', practo, name='practo'),
-    path('zocdoc/', zocdoc, name='zocdoc'),
+    path('amwell/', amwell, name= 'amwell'),
+    path('healthtap/', healthtap, name= 'healthtap'),
+    path('practo/', practo, name= 'practo'),
+    path('zocdoc/', zocdoc, name= 'zocdoc'),
     path('forms/', views.forms, name='forms'),
     # re_path(r'^.*$', index, name='index')
    
